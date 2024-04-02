@@ -1,6 +1,6 @@
 package ia.gobots.mspedidos.security;
 
-import com.example.auth.repositories.UserRepository;
+import ia.gobots.mspedidos.repositories.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
