@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: pedidos
+      POSTGRES_PASSWORD: PedidosSenha
+      POSTGRES_DB: db_pedidos
+    ports:
+      - 5437:5432
