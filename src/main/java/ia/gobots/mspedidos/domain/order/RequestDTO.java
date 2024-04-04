@@ -1,6 +1,6 @@
 package ia.gobots.mspedidos.domain.order;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.*;
@@ -21,12 +21,12 @@ public class RequestDTO implements Serializable {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String status;
-    private List<Itens> items;
+    private List<ItemDTO> items;
     private String seller;
-    private Buyer buyer;
-    private ShippingAddress shippingAddress;
-    private BillingAddress billingAddress;
-    private Payment payment;
+    private BuyerDTO buyer;
+    private ShippingAddressDTO shippingAddress;
+    private BillingAddressDTO billingAddress;
+    private PaymentDTO payment;
 
     public RequestDTO(String jsonString) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
