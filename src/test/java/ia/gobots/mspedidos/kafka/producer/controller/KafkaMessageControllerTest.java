@@ -31,10 +31,8 @@ class KafkaMessageControllerTest {
 
     @Test
     void testSendEvents() throws Exception {
-        // Given
         String message = "Test message";
 
-        // When and Then
         mockMvc.perform(post("/api/producer/publish")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(message))
