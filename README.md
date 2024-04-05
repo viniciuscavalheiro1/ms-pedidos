@@ -30,3 +30,8 @@ E rodar a aplicação
 
 
 Collection HTTP na raiz do projeto: Insomnia_2024-04-02.json
+
+
+Testes
+
+![Testes](images/testes.png)
